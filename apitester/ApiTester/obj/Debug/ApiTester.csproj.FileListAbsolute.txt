@@ -1,0 +1,6 @@
+C:\src\coreweb\apitester\ApiTester\bin\Debug\ApiTester.exe.config
+C:\src\coreweb\apitester\ApiTester\bin\Debug\ApiTester.exe
+C:\src\coreweb\apitester\ApiTester\bin\Debug\ApiTester.pdb
+C:\src\coreweb\apitester\ApiTester\obj\Debug\ApiTester.csprojResolveAssemblyReference.cache
+C:\src\coreweb\apitester\ApiTester\obj\Debug\ApiTester.exe
+C:\src\coreweb\apitester\ApiTester\obj\Debug\ApiTester.pdb
