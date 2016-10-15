@@ -22,8 +22,37 @@ namespace coreweb1
         {
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await myprocessing(context);
             });
         }
+
+        private Task myprocessing(HttpContext context)
+        {
+            if (context.Request.Query.First().ToString().Contains("hubba"))
+                return context.Response.WriteAsync
+                    (string.Format(webpagefixed, context.Request.Query.First().ToString()));
+            else
+           return  context.Response.WriteAsync(webpage); 
+            
+        }
+
+        static string webpage =
+            @"<html>
+               <body>
+                    ingen behandling sker, sidan returneras som det är skriven i html
+               </body>
+            </html>"
+;
+
+        static string webpagefixed =
+            @"<html>
+              <body>
+                  <div> Den här sidan har manipulerats på servern innan den sänds tillbaks</div>
+                  <script>alert('sidan har manupilerats av kod {0}' ) </script>
+              </body>
+           </html>"
+;
+
+
     }
 }
